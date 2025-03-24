@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Should I Know</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .links {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .link-item {
+            margin: 15px 0;
+            text-align: left;
+        }
+        .link-item a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .link-item a:hover {
+            color: #0056b3;
+        }
+        .source {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+    <script>
+        function searchLinks() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let links = document.querySelectorAll('.link-item');
+            
+            links.forEach(link => {
+                let text = link.textContent.toLowerCase();
+                if (text.includes(input)) {
+                    link.style.display = "block";
+                } else {
+                    link.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <h2>What Should I Know</h2>
+    
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="searchLinks()" placeholder="Search content...">
+    </div>
+    
+    <div class="links">
+        <div class="link-item">
+            <a href="https://medium.com/learning-data/choosing-the-right-charts-for-effective-business-insights-41060082aac4" target="_blank">
+                Choosing the Right Charts for Effective Business Insights
+            </a>
+            <div class="source">Source: Medium - Learning Data</div>
+        </div>
+
+        <div class="link-item">
+            <a href="https://www.data-to-viz.com/" target="_blank">
+                Data to Viz - Guide to Choosing Visualizations
+            </a>
+            <div class="source">Source: Data to Viz</div>
+        </div>
+
+        <div class="link-item">
+            <a href="https://storytellingwithdata.com/" target="_blank">
+                Storytelling with Data - Best Practices
+            </a>
+            <div class="source">Source: Storytelling with Data</div>
+        </div>
+    </div>
+</body>
+</html>

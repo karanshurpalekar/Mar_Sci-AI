@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mar Sci - Knowledge Home - One Stop for Your Media Analytics Knowledge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <!-- Dialogflow Messenger Integration -->
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
+    }
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
+
+  /* Full-page centering */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    width: 100vw; /* Full screen width */
+  }
+
+  /* Styling the sections */
+  .sections {
+    text-align: center;
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    background: rgba(255, 255, 255, 0.8); /* Soft background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .sections h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .sections a {
+    display: block;
+    font-size: 18px;
+    color: #007BFF;
+    text-decoration: none;
+    margin: 8px 0;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .sections a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+</style>  </style>
+</head>
+<body>
+  <header class="hero">
+    <div style="text-align: center;">
+       <img class="logo" src="data:image/png;base64,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" alt="MarSci Logo">
+    </div>
+    <h1 class="hero-heading">Mar Sci</h1>
+    <h2 class="hero-subheading">Experience the Media Analytics Knowledge</h2>
+    <p class="hero-description">Discover the ultimate experience with Mar Sci</p>
+    <a class="cta-button" href="#">Learn More</a>
+  </header>
+
+<!-- Knowledge Sections -->
+<div class="container">
+  <div class="sections">
+    <h2>Knowledge Base Sections</h2>
+    <a href="analytics.html">Analytics</a>
+    <a href="Datorama.html">Datorama</a>
+    <a href="visualization-best-practice.html">Visualization Best Practice</a>
+    <a href="dashboard-templates.html">Dashboard Templates</a>
+  </div>
+
+
+
+
+  <!-- Dialogflow Messenger Element -->
+<df-messenger
+  project-id="ai-chatbot-test-432408"
+  agent-id="4a1e9690-3a38-417a-8ecf-619eae2c57b3"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+   chat-title="MAr_SCi bot">
+  </df-messenger-chat-bubble>
+</df-messenger>
+  
+</body>
+</html>
